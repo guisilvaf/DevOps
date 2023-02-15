@@ -1,0 +1,20 @@
+#key value pair
+"apple" : "I am a red fruit"
+1 : "this is a number"
+---
+#lists
+- apple
+- mango
+- banana
+- Banana
+---
+#block
+cities:
+ - new delhi
+ - new york
+ - brasilia
+---
+cities: [new delhi, new york, brasilia]
+---
+{mango: "yellow fruit", age: 56}
+...

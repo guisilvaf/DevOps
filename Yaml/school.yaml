@@ -1,0 +1,8 @@
+---
+School:
+- name: DPS
+  principal: Someone
+  students:
+  - rno: 12
+    name: Guilherme Silva
+    marks: 84

@@ -1,0 +1,68 @@
+#list
+student: !!seq
+ - marks
+ - name
+ - roll_no
+
+#if a key of the seq is empty
+sparse seq:
+ - hey
+ - how
+ - 
+ - Null
+ - sup
+
+#nested seq
+-
+ - mango
+ - apple
+ - banana
+-
+ - marks
+ - roll num
+ - date
+
+#key: value pairs are called maps
+!!map
+
+#nested mappings: map within an map
+name: Guilherme Silva
+role:
+  age: 23
+  job: Dev
+
+#pairs: keys may have duplicate values
+pair example: !!pairs
+ - job: student
+ - job: teacher
+
+#!!set allows you to have unique values
+names: !!set
+ ? Guilherme
+ ? Ana
+ ? João
+
+#dictionary !!omap
+people: !!omap
+ - Guilherme:
+    name: Guilherme Silva
+    age: 25
+    height:  684
+ - Ana:
+    name: Ana Souza
+    age: 56
+    height: 896
+
+#reusing some properties using anchors
+likings: &likes
+  fav fruit: mango
+  dislikes: apple
+
+person1:
+  name: Guilherme Silva
+  <<: *likes
+
+person2:
+  name: Gabriel Macedo
+  <<: *likes
+  dislikes: berries

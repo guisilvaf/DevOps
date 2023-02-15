@@ -1,0 +1,42 @@
+#string variables
+name: Guilherme Silva
+fruit: "apple"
+job: 'devops'
+
+bio: |
+My name is Guilherme Silva.
+I am studying DevOps.
+
+#write a single lane in multiple lines
+message: >
+This will
+all be
+in on single line.
+
+#numbers
+int: 5632
+float: 98.25
+boolean: No # n, N, false, False, FALSE
+
+#specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 #540,000
+exponential numbers: 6.023E56
+
+#floating point numbers
+marks: !!float 58.89
+infinite: !!float .infinite
+not a num: .nan
+
+#null
+surname: !!null Null # null, NULL
+~: null key
+
+#dates and time
+date: 2002-12-14
+current time: 2001-12-15T02:59:43.1Z
